@@ -1,0 +1,3 @@
+while (alive radioTower) do {
+	
+};

@@ -1,0 +1,1 @@
+[] execVM "ZadeServicePoint\scripts\ServicePoint_Init.sqf";

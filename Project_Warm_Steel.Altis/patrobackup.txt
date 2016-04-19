@@ -1,0 +1,73 @@
+
+//spawn units on HC1 if present
+if(HC1Present && isMultiplayer) then {
+    if(!isServer && !hasInterface) then {
+        diag_log "HC: Spawning AI on the HC";
+        //[] execVM "DAC\DAC_Config_Creator.sqf";
+        [] execVM "mission\main\missionControl.sqf";
+        [] execVM "mission\side\missionControl.sqf";
+		//[p1,"patSs","NOWAIT","NOSLOW"] execVM "ups.sqf"; 
+		// [p1_3,"patSs","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa3,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p3,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_1,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_2,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_3,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa4,"PatNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p4,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_4,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa6,"PatNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_5,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa7,"PatNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_7,"patNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p5,"PatNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_6,"patNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa8,"PatNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa9,"PatSe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_9,"patSe","NOWAIT","NOSLOW"] execVM "ups.sqf"; 
+		// [p6,"PatSe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_8,"patSe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa10,"PatSe","NOWAIT","NOSLOW"] execVM "ups.sqf"; 
+		//_null = [] execVM "scripts\eos\OpenMe.sqf";																// EOS (urban mission and defend AO)
+		//[] execVM "cos\cosInit.sqf";
+        //[] execVM "cos\cosInit.sqf";
+		// [] execVM "scripts\tf47\patrols.sqf";
+		
+//[] execVM "cos\cosInit.sqf";
+    };
+} else { //spawn units on server
+    if(isServer) then {
+        diag_log "HC: Spawning AI the SERVER";
+        //[] execVM "DAC\DAC_Config_Creator.sqf";
+        [] execVM "mission\main\missionControl.sqf";
+        [] execVM "mission\side\missionControl.sqf";
+		// [] execVM "scripts\tf47\patrols.sqf";
+		// [p1,"patSs","NOWAIT","NOSLOW"] execVM "ups.sqf"; 
+		// [p1_3,"patSs","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa3,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p3,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_1,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_2,"patSw","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_3,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa4,"PatNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p4,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_4,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa6,"PatNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_5,"patNn","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa7,"PatNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_7,"patNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p5,"PatNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_6,"patNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa8,"PatNe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa9,"PatSe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_9,"patSe","NOWAIT","NOSLOW"] execVM "ups.sqf"; 
+		// [p6,"PatSe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [p1_3_8,"patSe","NOWAIT","NOSLOW"] execVM "ups.sqf";
+		// [pa10,"PatSe","NOWAIT","NOSLOW"] execVM "ups.sqf"; 
+		//_null = [] execVM "scripts\eos\OpenMe.sqf";																// EOS (urban mission and defend AO)
+		//[] execVM "cos\cosInit.sqf";
+        //[] execVM "cos\cosInit.sqf";
+				// [] execVM "scripts\tf47\patrols.sqf";
+// [] execVM "cos\cosInit.sqf";
+    };
+};

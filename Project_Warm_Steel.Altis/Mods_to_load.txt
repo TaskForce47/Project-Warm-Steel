@@ -1,0 +1,16 @@
+@rhs_afrf3
+@rhs_usf3
+@task force radio
+@cba_a3
+@ace3
+@melb
+@firewill_sar
+@f16c_standalone
+@xla_arsenal
+@mightygau
+@hafm_uaz
+@ares
+@backpackonchest
+@tf47_launchers
+@tf47_launchers_rhs
+
